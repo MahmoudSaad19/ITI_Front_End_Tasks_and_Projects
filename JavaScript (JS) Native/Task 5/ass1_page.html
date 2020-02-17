@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+</head>
+
+<body>
+    <script>
+        var username = location.search.split("&")[0].split("=")[1];
+        var e1 = location.search.split("&")[1].split("=")[1].split("%")[0];
+        var e2 = location.search.split("&")[1].split("=")[1].split("%")[1];
+        var edata = e1+"@"+e2;
+        document.write("Welcome "+username.fontcolor("blue")+" ^_^");
+        document.write("<br>your email is : "+edata.fontcolor("blue"));
+        
+        /*
+        var loc = location.search.split("?")[1].split("&");
+        loc = loc[0].split("=").concat( loc[1].split("="));
+        var ass = [];
+        ass[loc[0]] = loc[1];
+        ass[loc[2]] = loc[3];
+
+
+
+        
+        */
+        
+    </script>
+
+</body>
+
+</html>

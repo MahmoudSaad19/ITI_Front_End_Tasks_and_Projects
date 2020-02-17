@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> video Page </title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+    <center>
+    <video src="video/frozen.mp4" width="700" height="400" poster="image/frozen.jpg" muted >
+    </video>
+        <br>
+        <input type="range" value="0" id="vidtime" min="0" max="100">
+        <span>0:00 / 1:50</span>
+        <br>
+        <button onclick="play()">play</button>
+    <button onclick="stop()">stop</button>
+    <button onclick="zero()">&lt;&lt;</button>
+    <button onclick="back()">&lt;</button>
+    <button onclick="forward()">&gt;</button>
+    <button onclick="end()">&gt;&gt;</button>
+    <input type="range" value="0" step="0.1" min="0" max="1">
+                <button onclick="mute()">mute</button>
+        
+        <input type="range" value="1" step="0.25" min="0.25" max="2">
+
+</center>
+        <script src="script/task1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #bg {
+            position: absolute;
+            right: 0px;
+            width: 100px;
+        }
+
+    </style>
+    <title>black hole</title>
+    <script src="script/jQuery-Dev.js"></script>
+    <script src="jQ-ui/jquery-ui.js"></script>
+    <script src="script/easing.js"></script>
+    <script>
+        $(function() {
+            $("#bg").draggable({
+                drag: function() {
+                    /*$("#bg").effect("shake", {
+                        distance: "5",
+                        //time: 1000
+                    });*/
+                },
+                start: function() {
+                    $("#bg").effect("shake", {
+                        //direction: "" ,
+                        distance: "30",
+                        time: "10000"
+                    });
+                },
+                stop: function() {
+                    //$("#bg").effect("shake");
+                }
+            });
+            $("#bg").mousemove(function() {});
+            $("img:first").droppable({
+                drop: function() {
+                    $("#bg").hide();
+                }
+            });
+
+
+
+        })
+
+    </script>
+</head>
+
+<body>
+    <img src="images/3.JPG">
+    <span>
+        <img src="images/2.jpg" id="bg">
+</span>
+
+
+</body>
+
+</html>

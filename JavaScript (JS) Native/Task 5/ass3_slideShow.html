@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+</head>
+
+<body>
+    <button onclick="go_next()"> Next </button>
+    <button onclick="slide()"> Slideshow </button>
+    <button onclick="go_prev()"> Previous </button>
+    <button onclick="stop_slide()"> Stop </button>
+    <br>
+    <br>
+    <br>
+    
+    <img src="SlideShow/1.jpg">
+    
+    <script>
+        var current_pic = 1;
+        var slides ;
+        function go_next()
+        {
+            if(current_pic <6)
+                current_pic++;
+            document.images[0].src = "SlideShow/"+current_pic+".jpg";
+        }
+        function go_prev()
+        {
+            if(current_pic >1) 
+                current_pic--;
+            document.images[0].src = "SlideShow/"+current_pic+".jpg";
+        }
+        function slide()
+        {
+            flag=1;
+            clearInterval(slides);
+            slides = setInterval(function ()
+            {
+                document.images[0].src = "SlideShow/"+current_pic+".jpg";
+                if(current_pic ==6)
+                    current_pic=1;
+                current_pic++;
+            },500);
+        }
+        function stop_slide ()
+        {
+            clearInterval(slides);
+        }
+    </script>
+
+</body>
+
+</html>

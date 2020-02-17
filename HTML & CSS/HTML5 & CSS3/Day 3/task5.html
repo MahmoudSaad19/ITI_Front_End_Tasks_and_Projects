@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Web Page </title>
+
+    <style>
+        form {
+            border: 3px orange solid;
+            padding: 30px;
+        }
+
+        input:invalid {
+            border: 3px red solid;
+
+        }
+
+        input:valid+br+label {
+            display: none;
+        }
+
+        input:invalid+br+label {
+            display: inline;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Change Email Address </h1>
+        <label> name : </label>
+        <input type="text" minlength="5">
+        <br>
+        <label>The required username must be 5 charcters at least.</label>
+        <br>
+        <label>email : </label>
+        <input type="email">
+        <br>
+        <label>The required email must have @ sign in it.</label>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>

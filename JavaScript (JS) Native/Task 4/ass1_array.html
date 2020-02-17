@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+    <script>
+        var arr = [];
+        for (i=0 ; i<5 ; i++)
+            arr[i] = prompt("Enter a number ");
+        document.write("you have entered : ".fontcolor("blue"));
+        showContent(arr);
+        document.write("<br>your values after descending order : ".fontcolor("blue"));
+        arr.sort((a, b) =>  b - a); // For descending sort
+        showContent(arr);
+        document.write("<br>your values after ascending order : ".fontcolor("blue"));
+        arr.sort((a, b) => a - b); // For ascending sort
+        showContent(arr);
+        
+        function showContent (array)
+        {
+            for (i in array) {
+                if (i==4)
+                    document.write( array[i]);
+                else
+                    document.write( array[i]+", ");
+            }
+        }
+        // for ascending
+        function sortNumber(a, b) {
+          return a - b;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+button {
+    color: white;
+    background: deepskyblue;
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+    font-family: monospace;
+    font-style: oblique;
+    box-shadow: 10px 5px 5px gray;
+}
+
+div {
+    width: 600px;
+    height: 300px;
+    box-shadow: 10px 10px 10px 10px gray;
+    display: none;
+}
+
+img+img {
+    width: 300px;
+    height: 200px;
+}
+
+.arr {
+    width: 100px;
+    height: 100px;
+}
+
+#co {
+    width: 300px;
+    height: 80px;
+}
+
+#Sevices {
+    display: block;
+    position: relative;
+    left: 77px;
+}

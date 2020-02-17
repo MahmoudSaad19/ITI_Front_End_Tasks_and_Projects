@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+    <script>
+        var win= open("ass3_child_window.html","" , "width=150 , height=150");
+        var time1;
+        var time2;
+        var interval = 10; // default : 10
+        var timeToReverse = 1800; // default : 1800
+        var step = 3;// default : 3
+        time1 = setInterval(move,interval);
+        var timeOut = setTimeout(up,timeToReverse);
+        win.focus();
+
+        function down ()
+        {
+            clearInterval(time2);
+            clearTimeout(timeOut);
+            time1 = setInterval(move,interval);
+            timeOut = setTimeout(up,timeToReverse);
+            //write();
+        }
+        function up()
+        {
+            clearInterval(time1);
+            time2= setInterval(moveu,interval);
+            timerID=setTimeout(down,timeToReverse);
+            //write();
+        }
+        function moveu (){
+            win.moveBy(-step,-step);
+            win.focus();   
+        }
+        function move (){
+            win.moveBy(step,step);
+            win.focus();   
+        }
+        function write()
+        {
+            var i=0 ;
+            var str = "Hello ^_^"
+            time = setInterval( start,100);       
+            function start()
+            {
+                if(i<str.length)
+                    win.document.write(str[i]);
+                i++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="win.close()" value="close" >
+</body>
+
+</html>

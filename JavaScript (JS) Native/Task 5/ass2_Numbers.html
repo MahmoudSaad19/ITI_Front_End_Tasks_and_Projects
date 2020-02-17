@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+</head>
+
+<body>
+    <input type="button" value=" 1 " onclick="writeVal(this.value)">
+    <input type="button" value=" 2 " onclick="writeVal(this.value)">
+    <input type="button" value=" 3 " onclick="writeVal(this.value)">
+    <input type="button" value=" 4 " onclick="writeVal(this.value)">
+    <input type="button" value=" 5 " onclick="writeVal(this.value)">
+    <input type="button" value=" 6 " onclick="writeVal(this.value)">
+    <input type="text" name="usr" value="abc" id="txt1" onfocus="select()" onblur="console.log(this.value)">
+
+    <input type="button" value=" C " onclick="delet()">
+    <input type="button" value=" << " onclick="clearchar(this)">
+
+    <script>
+        function clearchar (val)
+        {
+            var l = document.getElementById("txt1").value.length -1;
+            document.getElementById("txt1").value = 
+            document.getElementById("txt1").value.substr(0,l);
+        }
+        function delet()
+        {
+            document.getElementById("txt1").value = "";
+        }
+        function writeVal(val) {
+            document.getElementById("txt1").value += val.trim();
+
+        }
+    </script>
+</body>
+
+</html>

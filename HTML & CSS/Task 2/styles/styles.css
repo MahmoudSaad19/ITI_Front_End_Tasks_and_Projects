@@ -1,0 +1,26 @@
+body
+{
+    background-color: lightskyblue;
+}
+#home_header
+{
+    text-align: right;
+    color: navy;
+}
+
+#df
+{
+    color: red;
+
+}
+
+#id1
+{
+    margin-left: 488px;
+    margin-top: 50px;
+    
+}
+table,td
+{
+    border: solid 4px red ;
+}

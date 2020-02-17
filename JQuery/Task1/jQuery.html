@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>title Document</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="script/jQuery-Dev.js"></script>
+    <script>
+        $(function () {
+            $("span").hide();
+            var i = 1;
+            $("#btn1").click(function () {
+                $("div").hide();
+                $("span").hide();
+                $("#About").toggle(); //400
+            });
+            $("#btn2").click(function () {
+                $("div").hide();
+                $("span").hide();
+                $("#Gallery").toggle(); //400
+            });
+            $("img:first").click(function () {
+                i--;
+                if (i == 0) i = 8;
+                $("img:eq(1)").attr("src", "images/" + i + ".jpg");
+            });
+            $("img:last").click(function () {
+                i++;
+                if (i == 9) i = 1;
+                $("img:eq(1)").attr("src", "images/" + i + ".jpg");
+            });
+            $("#btn3").click(function () {
+                $("div").hide();
+                $("#Sevices").slideToggle(); //400
+            });
+            $("#btn4").click(function () {
+                $("div").hide();
+                $("span").hide();
+                $("#Complain").toggle();
+            });
+            $("#sb").click(function () {
+                $("#data").show();
+                $("#Complain").hide();
+                var dd = $("input:eq(0)").val(); // name
+                var e = $("input:eq(1)").val(); //email
+                var p = $("input:eq(2)").val(); //phone
+                var co = $("input:eq(3)").val(); //complain
+                $("#namedata").html(dd);
+                $("#emaildata").html(e);
+                $("#phonedata").html(p);
+                $("#compdata").html(co);
+            })
+            $("#back").click(function () {
+                $("#data").hide();
+                $("#Complain").show();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <center>
+        <button id="btn1">About</button>
+        <button id="btn2">Gallery</button>
+        <button id="btn3">Sevices</button>
+        <button id="btn4">Complain</button> <span id="Sevices">
+                <button>Item 1</button>
+                <br>
+                <button>Item 2</button>
+                <br>
+                <button>Item 3</button>
+            </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="About">Story about snow man.</div>
+        <div id="Gallery">
+            <br>
+            <br>
+            <br> <img src="images/left.png" class="arr"> <img src="images/1.jpg"> <img src="images/right.png" class="arr"> </div>
+        <div id="Complain">
+            <form>
+                <br>
+                <label for="dodo">Name : </label>
+                <input type="text" name="dodo">
+                <br>
+                <br>
+                <label for="e">Email : </label>
+                <input type="text" name="e">
+                <br>
+                <br>
+                <label for="p">Phone : </label>
+                <input type="text" name="p">
+                <br>
+                <br>
+                <label for="cop">complain : </label>
+                <br>
+                <input type="text" name="cop" id="co">
+                <br>
+                <br>
+                <input type="button" value="send" id="sb"> </form>
+        </div>
+        <div id="data">
+            <form>
+                <br>
+                <label>Your complain is : </label>
+                <label id="compdata">Your complain is : </label>
+                <br>
+                <br>
+                <label>Your name is : </label>
+                <label id="namedata">Your name is : </label>
+                <br>
+                <br>
+                <label>Your Email is : </label>
+                <label id="emaildata">Your Email is : </label>
+                <br>
+                <br>
+                <label>Your Phone is : </label>
+                <label id="phonedata">Your Phone is : </label>
+                <br>
+                <br>
+                <input type="button" value="back to edit" id="back"> </form>
+        </div>
+    </center>
+</body>
+
+</html>

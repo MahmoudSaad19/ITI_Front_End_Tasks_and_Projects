@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web Page </title>
+    <script>
+        var str = "hello my name is mahmoud this is a test message and this message will be destroyed after 2 seconds.";
+        var win= open("ass3_child_window.html","" , "width=600 , height=300");
+        var i=0 ;
+        time = setInterval( start,100);       
+        function start()
+        {
+            if(i<str.length)
+                win.document.write(str[i]);
+            i++;
+        }
+        setTimeout(close,13000);
+        function close ()
+        {
+            win.close();
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

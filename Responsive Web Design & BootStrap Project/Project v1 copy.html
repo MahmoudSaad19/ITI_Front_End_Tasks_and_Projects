@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> My Responsive Page </title>
+
+    <link href="bootstrap4/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        #pic {
+            clip-path: polygon(20% 0, 80% 0, 80% 80%, 50% 55%, 20% 80%);
+        }
+
+        @media (min-width: 992px) {
+            #pic {
+                clip-path: polygon(20% 0, 80% 0, 80% 100%, 50% 55%, 20% 100%);
+            }
+        }
+
+        hr {
+            border: none;
+            border-bottom: 2.2px solid rgb(0, 0, 0, 0.55);
+            overflow: visible;
+            border-radius: 100px;
+            text-align: center;
+            height: 1px;
+        }
+
+        hr:after {
+            background: transparent;
+            content: '\0023F6';
+            color: rgba(0, 0, 0, 0.55);
+            font-weight: bold;
+            font-size: 90px;
+            position: relative;
+            top: -89px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container align-content-center">
+
+        <div id="stick" class="col-12 d-none d-md-block">
+            <img id="pic" src="Images/glitter2.jpg" class="col-2 img-fluid">
+        </div>
+
+        <!--   main (middle) Pic  -->
+
+        <div class="m-1 d-md-none">
+            <img src="Images/3.jpg" class="img-fluid rounded-circle col-7 col-md-12 offset-3">
+        </div>
+
+        <!--  4 mid devices pic -->
+
+        <div class="m-1 m-md-0 col-12 d-flex d-lg-none">
+            <img src="Images/3.jpg" class="img-fluid d-md-inline d-none rounded-circle col-4 col-md-3">
+            <img src="Images/11.jpg" class="img-fluid rounded-circle col-4 col-md-3">
+            <img src="Images/11.jpg" class="img-fluid rounded-circle col-4 col-md-3">
+            <img src="Images/11.jpg" class="img-fluid rounded-circle col-4 col-md-3">
+        </div>
+
+        <!-- Big container for large devices -->
+
+        <div id="bigco" class="col-12 d-block d-lg-flex m-md-2 text-center">
+
+            <!--  4 large devices pic -->
+
+            <div id="big" class="d-none col-lg-2 d-lg-inline">
+                <img src="Images/3.jpg" class="img-fluid rounded-circle my-4">
+                <img src="Images/11.jpg" class="img-fluid rounded-circle my-4">
+                <img src="Images/11.jpg" class="img-fluid rounded-circle my-4">
+                <img src="Images/11.jpg" class="img-fluid rounded-circle my-4">
+            </div>
+
+            <!--  All content after large devices -->
+
+            <div class="d-block col-12 col-lg-10">
+
+                <p class="text-center text-wrap m-1 h5 font-weight-normal col-12">Use the full power of the modern
+                    JavaScript
+                    ecosystem –
+                    WebStorm’s got you
+                    covered!
+                    Enjoy the intelligent code
+                    completion, on-the-fly error detection, powerful navigation and refactoring for JavaScript,
+                    TypeScript,
+                    stylesheet languages, and all the most popular frameworks.</p>
+
+                <div class="d-md-flex d-block col-12 my-3">
+                    <img src="Images/10.jpg" class="img-fluid m-2 m-md-0  col-12 col-md-4">
+                    <img src="Images/10.jpg" class="img-fluid m-2 m-md-0  col-12 col-md-4">
+                    <img src="Images/10.jpg" class="img-fluid m-2 m-md-0 col-12 col-md-4">
+                </div>
+
+                <div class="d-md-flex d-block col-12 my-3">
+                    <div class="m-1">
+                        <div class="col-12 m-1">
+                            <img src="Images/4.jpg" class="img-fluid rounded-circle col-8 ">
+                        </div>
+                        <h4 class="text-center h3">Integration with VCS</h4>
+                        <p class="text-center text-wrap m-1 font-weight-light h4">Use a simple unified UI to work with
+                            Git,
+                            GitHub,
+                            Mercurial, and other
+                            VCS.
+                            Commit files, review changes, and
+                            resolve conflicts with a visual diff/merge tool right in the IDE. </p>
+                    </div>
+                    <div class="m-1">
+                        <div class="col-12 m-1">
+                            <img src="Images/4.jpg" class="img-fluid rounded-circle col-8 ">
+                        </div>
+                        <h4 class="text-center h3">Integration with VCS</h4>
+                        <p class="text-center text-wrap m-1 font-weight-light h4">Use a simple unified UI to work with
+                            Git,
+                            GitHub,
+                            Mercurial, and other
+                            VCS.
+                            Commit files, review changes, and
+                            resolve conflicts with a visual diff/merge tool right in the IDE. </p>
+                    </div>
+                    <div class="m-1">
+                        <div class="col-12 m-1">
+                            <img src="Images/4.jpg" class="img-fluid rounded-circle col-8 ">
+                        </div>
+                        <h4 class="text-center h3">Integration with VCS</h4>
+                        <p class="text-center text-wrap m-1 font-weight-light h4">Use a simple unified UI to work with
+                            Git,
+                            GitHub,
+                            Mercurial,
+                            and
+                            other
+                            VCS.
+                            Commit files, review changes, and
+                            resolve conflicts with a visual diff/merge tool right in the IDE. </p>
+                    </div>
+                </div>
+
+
+
+                <br>
+                <hr>
+                <br>
+                <div class="d-md-flex d-block col-12 my-3">
+                    <h1 class="m-1 m-md-0 col-12 col-md-4 display-4 text-center text-md-left">What’s New in WebStorm
+                        2019.3
+                    </h1>
+                    <div class="col-12 col-md-8 text-center">
+                        <br>
+                        <br>
+                        <h3 class="m-1 text-center font-weight-normal h3">Start working on your projects
+                            immediately instead
+                            of
+                            wasting time juggling
+                            multiple plugins.</h3>
+                    </div>
+
+                </div>
+                <br>
+                <div class="d-md-flex d-block col-12 my-3">
+                    <div class="embed-responsive embed-responsive-16by9 m-md-0 col-12 col-md-8">
+                        <video class="m-1 embed-responsive-item" src="" muted controls></video>
+                    </div>
+                    <p class="m-1 m-md-0 col-12 col-md-4 text-center h5 font-weight-light">Start working on your
+                        projects
+                        immediately instead of
+                        wasting time
+                        juggling
+                        multiple plugins.
+                        With a variety
+                        of
+                        built-in developer tools and out-of-the-box language and framework support, there’s everything
+                        needed
+                        for
+                        productive JavaScript development.</p>
+                </div>
+                <br>
+                <div class="d-md-flex d-block col-12 my-3">
+                    <img src="Images/9.jpg" class="img-fluid m-1 col-12 col-md-4 m-md-0">
+                    <img src="Images/9.jpg" class="img-fluid m-1 col-12 col-md-4 m-md-0">
+                    <img src="Images/9.jpg" class="img-fluid m-1 col-12 col-md-4 m-md-0">
+                </div>
+
+            </div>
+
+        </div>
+
+        </br>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

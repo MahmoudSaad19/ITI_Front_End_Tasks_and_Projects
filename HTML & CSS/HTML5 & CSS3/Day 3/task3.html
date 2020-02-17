@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>canvas Roatation</title>
+
+</head>
+
+<body>
+    <center>
+        <canvas width="600" height="600"></canvas>
+    </center>
+
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var context = canvas.getContext('2d');
+
+        var angle = 0;
+        var counter = 0;
+
+        function Rotation() {
+            angle = 0;
+            context.save();
+            canvas.width = canvas.width;
+            context.restore();
+            context.fillStyle = "rgba(27, 109, 242,0.3)";
+            context.translate(300, 300);
+
+            for (var i = 0; i < counter; i++) {
+                context.save();
+                angle -= 30 * Math.PI / 180;
+                context.rotate(angle);
+                context.fillRect(0, 0, 50, 220);
+                context.restore();
+            }
+            counter--;
+            if (counter == 0) {
+                clearInterval(t2);
+                Rotation2();
+            }
+
+        }
+
+        function Rotation2() {
+            t = setInterval(function () {
+                context.save();
+                angle -= 30 * Math.PI / 180;
+
+                if (angle < -Math.PI * 2) {
+                    angle = 0;
+                    clearInterval(t);
+
+                    t2 = setInterval("Rotation()", 200);
+
+                }
+
+                context.rotate(angle);
+                context.fillRect(0, 0, 50, 220);
+                context.restore();
+                counter++;
+            }, 250);
+        }
+
+        context.fillStyle = "rgba(27, 109, 242,0.3)";
+        context.translate(300, 300);
+
+        var t;
+        Rotation2();
+    </script>
+
+
+</body>
+
+</html>

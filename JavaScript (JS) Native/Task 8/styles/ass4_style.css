@@ -1,0 +1,13 @@
+table#Text {
+            width: 550px;
+            border-collapse: collapse
+        }
+
+        table#Text tr {
+            vertical-align: top
+        }
+
+        table#Text td {
+            font-family: times new roman;
+            font-size: 11pt
+        }

@@ -1,0 +1,214 @@
+.main_Div {
+    background-color: transparent;
+    width: 1525px;
+    display: none;
+}
+#main_div_OF_room{
+    position: absolute;
+    left: 350px;
+    right: 150px;
+    width: 720px;
+    height: 560px;
+    background-image: url(../Images/Floor/wall9.jpg);
+    display: none;
+}
+
+#Budget{
+    color: darkgoldenrod;
+    font-size: 20px;
+    font-family: cursive;
+    display: none;
+}
+#dollar{
+    color: darkgoldenrod;
+    font-size: 20px;
+    font-family: cursive;
+    display: none;
+}
+#Room_Color{
+    position: absolute;
+    right: 20px;
+    width: 250px;
+    height: 560px;
+    display: none;
+    background-color: Lavender;
+    box-shadow: 5px 10px 8px 8px #888888;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#side_Wall_Color{
+        overflow-y: scroll;
+        height: 100px;
+}
+#Front_Wall_Color{
+        overflow-y: scroll;
+        height: 100px;
+}
+#Floor_Color{
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 120px;
+}
+#first_Page{
+    width: 1500px;
+    height: 1000px;
+    text-align: center;
+    background-color: ivory;
+}
+
+#trapezium{
+    height: 0;
+    width: 500px;
+    border-bottom: 300px solid lightgray;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    
+}
+
+#inner_trapezium{
+    position: absolute;
+    top: 150px;
+    width: 720px;
+    height: 410px;
+    margin-right: 30px;
+}
+
+#parallelogram{
+    width: 500px;
+    height: 260px;
+    background-image: url(../Images/Floor/wall9.jpg);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: Lavender;
+    box-shadow: 1px 1px 1px 1px gray;
+    text-align: center;
+    font-size: 16px;
+    font-family: fantasy;
+    color: darkgoldenrod;
+    display: inline-block;
+}
+.child_Div {
+    position: absolute;
+    left: 10px;
+    width: 250px;
+    height: 560px;
+    display: none;
+    background-color: Lavender;
+    box-shadow: 5px 10px 8px 8px #888888;
+    overflow-x: hidden;
+    overflow-x: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+.child_img {
+    width: 100px;
+    height: 100px;
+}
+
+.child_img2 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+#work_area {
+    position: absolute;
+    width: 1350px;
+    height: 690px;
+}
+
+#room {
+    position: absolute;
+    left: 300px;
+    width: 600px;
+    height: 400px;
+    background-color: lightgoldenrodyellow;
+}
+#rec {
+    position: absolute;
+    left: 190px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+}
+.clonedbeds {
+    position: static;
+    width: 200px;
+    height: 200px;
+}
+
+.clonedcarpet {
+    position: static;
+    width: 100px;
+    height: 100px;
+}
+
+.clonedchairs {
+    position: static;
+    width: 100px;
+    height: 100px;
+}
+
+.clonedcupboard {
+    position: static;
+    width: 200px;
+    height: 200px;
+}
+
+.clonedcommode {
+    position: static;
+    width: 90px;
+    height: 90px;
+}
+
+.clonedlamp {
+    position: static;
+    width: 60px;
+    height: 60px;
+}
+
+.clonedlibrary {
+    position: static;
+    width: 200px;
+    height: 200px;
+}
+
+.clonedmirror {
+    position: static;
+    width: 120px;
+    height: 120px;
+}
+
+.clonedpillow {
+    position: static;
+    width: 60px;
+    height: 60px;
+}
+
+.clonedsofa {
+    position: static;
+    width: 160px;
+    height: 160px;
+}
+
+.clonedwalllights {
+    position: static;
+    width: 70px;
+    height: 70px;
+}
+
+.clonedclocks {
+    position: static;
+    width: 55px;
+    height: 55px;
+}

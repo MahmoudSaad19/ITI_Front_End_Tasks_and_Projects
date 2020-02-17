@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Web Page </title>
+</head>
+
+<body>
+    <canvas width="500" height="300"></canvas>
+    <p>accord to p tero</p>
+    <math>
+        <mrow>c</mrow>
+        <mrow> = </mrow>
+        <msqrt>
+            <mrow>
+
+                <msup>
+                    <mrow>
+                        <mi>a</mi>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn>
+                    </mrow>
+                </msup>
+            </mrow>
+
+            <mrow>
+
+                <mo>+</mo>
+            </mrow>
+
+            <mrow>
+
+                <msup>
+                    <mrow>
+                        <mi>b</mi>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn>
+                    </mrow>
+                </msup>
+            </mrow>
+
+        </msqrt>
+    </math>
+
+
+
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(200, 200);
+        ctx.lineTo(300, 200);
+        ctx.lineTo(300, 50);
+        ctx.closePath();
+        ctx.strokeStyle = "blue";
+        ctx.fillStyle = "skyblue";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.fill();
+
+    </script>
+
+    <script src="script/task2.js">
+    </script>
+
+
+</body>
+
+</html>
